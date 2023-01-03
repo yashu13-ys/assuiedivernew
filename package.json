@@ -2,6 +2,7 @@
   "name": "aussiediver",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yashu13-ys.github.io/aussiedivernew",
   "dependencies": {
     "@reach/menu-button": "^0.18.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -14,6 +15,7 @@
     "animate.css-react": "^1.1.0",
     "bootstrap": "^5.2.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^2.7.0",
@@ -29,6 +31,8 @@
     "wowjs": "^1.1.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
